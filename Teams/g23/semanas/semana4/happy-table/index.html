@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla Feliz</title>
+</head>
+
+<body>
+    <h1>Tabla Feliz</h1>
+    <script>
+
+        alert('Tabla Feliz');
+
+        let tableResult = '';
+        const table = prompt('¿Qué tabla de multiplicar desea generar?');
+        const limit = prompt('¿Hasta qeu número desea generar la tabla?');
+
+        for (let index = 0; index < limit; index++) {
+            tableResult = tableResult + table + ' x ' + (index + 1) + ': ' + (table * (index + 1) + '\n')
+        }
+
+        alert(tableResult);
+    </script>
+</body>
+
+</html>
